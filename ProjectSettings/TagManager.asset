@@ -5,11 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pole
-  - MaterialButtonLayer
-  - MaterialText
-  - MaterialRadioButton
   - Ring
-  - ground
+  - Music
   layers:
   - Default
   - TransparentFX
