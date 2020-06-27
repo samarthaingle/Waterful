@@ -25,10 +25,15 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
     {
         if (showResult == ShowResult.Finished)
         {
-            int newRings = (int)Variables.Saved.Get("savedRings");
-            newRings += 10;
-            Variables.Saved.Set("savedRings", newRings);
-            audioSource.mute = false;
+            bool ready = true;
+            if (ready)
+                {
+                int newRings = (int)Variables.Saved.Get("savedRings");
+                newRings += 10;
+                Variables.Saved.Set("savedRings", newRings);
+                audioSource.mute = false;
+                ready = false;
+                }
             
         }
         else if (showResult == ShowResult.Failed)
